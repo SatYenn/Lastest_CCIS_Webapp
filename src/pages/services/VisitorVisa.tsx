@@ -1,4 +1,4 @@
-import { ArrowRight, Check, Plane, Calendar, Users, FileText } from 'lucide-react';
+import { ArrowRight, Check, Plane, Calendar, Users } from 'lucide-react';
 
 // Add the missing constants
 const visaTypes = [

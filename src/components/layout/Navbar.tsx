@@ -237,14 +237,16 @@ export function Navbar() {
               {showServices && (
                 <div className="pl-4 space-y-2">
                   {services.map((service) => (
-                    <Link
-                      key={service.href}
-                      to={service.href}
-                      className="block text-gray-600 hover:text-red-600 px-3 py-2 text-base font-medium hover:bg-red-50 rounded-lg transition-colors duration-200 font-merriweather"
-                      onClick={() => setIsOpen(false)}
-                    >
-                      {service.name}
-                    </Link>
+                    service.href ? (
+                      <Link
+                        key={service.name}
+                        to={service.href}
+                        className="block text-gray-600 hover:text-red-600 px-3 py-2 text-base font-medium hover:bg-red-50 rounded-lg transition-colors duration-200 font-merriweather"
+                        onClick={() => setIsOpen(false)}
+                      >
+                        {service.name}
+                      </Link>
+                    ) : null
                   ))}
                 </div>
               )}
